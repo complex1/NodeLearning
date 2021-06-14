@@ -1,0 +1,17 @@
+<div class="product-card">
+  <h4>
+    <%= product.name %>
+  </h4>
+  <p>Quantity: <%= product.quantity %></p>
+  <p>Price: <%= product.price %></p>
+  <button value="<%= product.id %>">Add to cart</button>
+</div>
+<style>
+.product-card {
+  padding: 10px;
+  border-radius: 8px;
+  min-width: 150px;
+  margin: 10px;
+  box-shadow: 1px 1px 5px rgb(121, 121, 121);
+}
+</style>

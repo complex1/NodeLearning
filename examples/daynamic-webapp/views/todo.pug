@@ -1,0 +1,10 @@
+extends layout/common-layout.pug
+block pageContent
+  .container
+    h2 Todo App
+    form(action="/todo/add", method="post")
+      input(type="text", name="task")
+      button(type="submit") Add
+    ol
+      each task in tasks
+        li #{task}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('includes/head.ejs') %>
+
+<body>
+  <div class="container">
+    <h2>To Do app</h2>
+    <form action="/todo/add" method="POST">
+      <input type="text" name="task">
+      <button type="submit">Add</button>
+    </form>
+    <ol>
+      <% for (let task in tasks) { %>
+        <li><%= tasks[task] %></li>
+      <% } %>
+    </ol>
+  </div>
+</body>
+
+</html>
